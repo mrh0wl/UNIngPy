@@ -10,7 +10,7 @@ NAME = 'UNIngPy'
 
 setup(
     name="UNIngPy", # Replace with your own username
-    version="0.3.21",
+    version="0.4.11a",
     author="MrH0wl",
     author_email="secmare@protonmail.com",
     description="API para obtener articulos de la pagina oficial de la UNI Nicaragua",
