@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from UNIngPy.UNIngPy import uniarticles
+from UNIngPy import uniarticles
 from colorama import Fore, Back, Style
 
 ans = int(input('Cuantos articulos desea ver? '))
