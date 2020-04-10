@@ -112,12 +112,12 @@ class uniarticles(object):
 			res = {}
 			value = pageDelimiter.pop(-1) if len(pageDelimiter) is not 0 else limitResidue
 			requests.packages.urllib3.disable_warnings()
-			req = self.ExceptionHandler("Ha ocurrido un error: ", True, Exception, 1, self.session.get, uni_url[i], verify=True)
+			req = self.ExceptionHandler("Ha ocurrido un error: ", True, Exception, 1, self.session.get, uni_url[i], verify=False)
 			try:
 				soup = BeautifulSoup(req.content, 'html.parser')
 				articles = soup.findAll('article')
 				res = self.retrieve_results(articles, limit=value)
 				results.extend(res)
 			except:
-				print(req + " because" + self.ExceptionHandler(" ", True, Exception, 3, self.session.get, uni_url[i], verify=True).split("]")[0])
+				print(req + " because" + self.ExceptionHandler(" ", True, Exception, 3, self.session.get, uni_url[i]).split("]")[0])
 		return results
