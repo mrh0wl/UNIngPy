@@ -65,10 +65,9 @@ abra un problema allí para informar errores o sugerir mejoras.La colaboración 
 
 Autor:
 ------
-```
+
 👤 **Jackson Blandon**
 
-```
 
 Lista de contribudores: https://github.com/MrH0wl/UNIngPy/graphs/contributors
 
